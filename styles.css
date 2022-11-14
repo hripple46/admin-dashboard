@@ -4,8 +4,13 @@ body {
   width: 100%;
 }
 body {
+  font-family: "Manrope", sans-serif;
   padding: 0;
   margin: 0;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
 }
 
 .grid-container {
@@ -33,10 +38,11 @@ body {
 }
 
 .searchBar {
-  grid-column: 1 / 6;
+  grid-column: 1 / 7;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  overflow: hidden;
 }
 
 input {
@@ -53,44 +59,44 @@ input {
   grid-row-start: 2;
   grid-row-end: 3;
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(12, 1fr);
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(17, 1fr);
   margin: 0;
   border: none;
 }
 
 .card1 {
-  grid-column: 1 / 6;
-  grid-row: 1 / 5;
+  grid-column: 1 / 7;
+  grid-row: 2 / 6;
 }
 .card2 {
-  grid-column: 6 / 11;
-  grid-row: 1 / 5;
+  grid-column: 7 / 13;
+  grid-row: 2 / 6;
 }
 .card3 {
-  grid-column: 11 / 13;
-  grid-row: 1 / 7;
+  grid-column: 13 / 17;
+  grid-row: 2 / 9;
 }
 
 .card4 {
-  grid-column: 1 / 6;
-  grid-row: 5 / 9;
+  grid-column: 1 / 7;
+  grid-row: 8 / 12;
 }
 
 .card5 {
-  grid-column: 6 / 11;
-  grid-row: 5 / 9;
+  grid-column: 7 / 13;
+  grid-row: 8 / 12;
 }
 
 .card6 {
-  grid-column: 11 /13;
-  grid-row: 7/13;
+  grid-column: 13 /17;
+  grid-row: 10/17;
 }
 .card7 {
-  grid-column: 1 / 6;
-  grid-row: 9 / 13;
+  grid-column: 1 / 7;
+  grid-row: 14 / 18;
 }
 .card8 {
-  grid-column: 6 / 11;
-  grid-row: 9 /13;
+  grid-column: 7 / 13;
+  grid-row: 14 /18;
 }
