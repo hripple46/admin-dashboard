@@ -20,21 +20,48 @@ body {
   grid-template-rows: 1fr 4fr;
 }
 
-.grid-container div {
-  border: 1px dotted black;
+.grid-container .header {
+  border: none;
+}
+.header .searchBar {
+  border-left: none;
+}
+.grid-container .mainContent {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+.mainContent div {
+  border: none;
+  box-shadow: 0px 0px 5px grey;
+  background-color: white;
+  border-radius: 25px;
 }
 
 .sidebar {
   grid-column: 1 / 2;
   grid-row: 1 / 3;
+  display: grid;
+  grid-template-rows: repeat(16, 1fr);
+  border: none;
+  border: solid 1px black;
+  background-color: #c4b5fd;
 }
 
+.grid-container .sidebar {
+  border-left: none;
+}
+.sidebar div {
+  border-right: none;
+  border-top: none;
+}
 .header {
   grid-column: 2 / 3;
   grid-row: 1 / 2;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  background-color: #f5f3ff;
 }
 
 .searchBar {
@@ -43,6 +70,7 @@ body {
   align-items: center;
   justify-content: flex-start;
   overflow: hidden;
+  border: none;
 }
 
 input {
@@ -63,40 +91,72 @@ input {
   grid-template-rows: repeat(17, 1fr);
   margin: 0;
   border: none;
+  border-left: none;
+  background-color: #f5f3ff;
 }
 
 .card1 {
-  grid-column: 1 / 7;
+  grid-column: 2 / 7;
   grid-row: 2 / 6;
 }
 .card2 {
-  grid-column: 7 / 13;
+  grid-column: 8 / 13;
   grid-row: 2 / 6;
 }
 .card3 {
-  grid-column: 13 / 17;
+  grid-column: 14 / 17;
   grid-row: 2 / 9;
 }
 
 .card4 {
-  grid-column: 1 / 7;
-  grid-row: 8 / 12;
+  grid-column: 2 / 7;
+  grid-row: 7 / 11;
 }
 
 .card5 {
-  grid-column: 7 / 13;
-  grid-row: 8 / 12;
+  grid-column: 8 / 13;
+  grid-row: 7 / 11;
 }
 
 .card6 {
-  grid-column: 13 /17;
+  grid-column: 14 /17;
   grid-row: 10/17;
 }
 .card7 {
-  grid-column: 1 / 7;
-  grid-row: 14 / 18;
+  grid-column: 2 / 7;
+  grid-row: 12 / 16;
 }
 .card8 {
-  grid-column: 7 / 13;
-  grid-row: 14 /18;
+  grid-column: 8 / 13;
+  grid-row: 12 /16;
+}
+
+.cardTitle {
+  grid-column: 1 / 3;
+  grid-row: 3 / 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.grid-container .cardTitle {
+  border: none;
+}
+.cardTitle p {
+  margin: 0;
+}
+
+#searchBtn {
+  background-color: transparent;
+}
+
+.sidebar div {
+  display: flex;
+  align-items: center;
+  border: none;
+}
+h1 {
+  font-size: 0.75em;
+  margin: 1px;
+  padding-left: 12px;
+  padding-top: 4px;
 }
